@@ -9,11 +9,11 @@ class BookList extends Component{
             return (
                 <li 
                 key={book.title} 
-                onClick={() => this.props.selectBook(book)}
+                onClick = { () => this.props.selectBook(book) }
                 className="list-group-item">{book.title}
                 </li> // 해당 키는 유니크한 값이어야 하기 때문
-            ) 
-        })
+            );
+        });
     }
 
     render(){
